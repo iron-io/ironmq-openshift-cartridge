@@ -1,0 +1,23 @@
+#!/bin/bash -e
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+function start() {
+  #adjust GEM_PATH & co in pre-packaged lib way
+}
+
+function stop() {
+  #adjust GEM_PATH & co back in pre-packaged lib way - might be not so trivial
+}
+
+function status() {
+  client_result "FIXME: if client got queues list - report sizes e.g."
+}
+
+case "$1" in
+  start)     start ;;
+  stop)      stop ;;
+  status)    status ;;
+  tidy)      tidy ;;
+  *)         exit 0
+esac

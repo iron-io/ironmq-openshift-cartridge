@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+# gem install iron_mq - uncommment
+# OR pre-install it and just fix GEM_PATH (in control script)
+
+client_result ""
+client_result "TODO: Main point of cartridge - tell user how to register and download iron.json"
+client_result ""
