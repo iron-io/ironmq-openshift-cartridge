@@ -11,7 +11,8 @@ function stop() {
 }
 
 function status() {
-  client_result "FIXME: if client got queues list - report sizes e.g."
+  dir=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+  client_result $(ruby "$dir/status.rb")
 }
 
 case "$1" in
